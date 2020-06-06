@@ -1,28 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import Hello from "./Hello";
 import './App.css';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          <br />
-          Updated by Abdul Qadir
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div><p>Hello My Name is <strong>{props.name}</strong></p></div>
+
+      <h3>This is a Heading in Div Tag</h3>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      <p>You can use JS Expresseion in React as Well Like 2+2 = {2+2}  </p>
+      <Hello /> 
+
+
+
     </div>
   );
-}
-
+  }
 export default App;
